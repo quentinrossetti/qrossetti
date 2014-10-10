@@ -1,0 +1,38 @@
+// Preloading module
+// =================
+//
+// Used to generate and animate the loadding sprite
+
+.preload {
+  height: 20px;
+  width: 20px;
+  margin: auto;
+  background: none;
+  
+  &-open { animation: preload-open 2s forwards; }
+  &-close { animation: preload-close 2s forwards; }
+  
+}
+
+@keyframes preload-open {
+  0% {
+    background: $color-background;
+  }
+  10% {
+    background: $color-main;
+  }
+  100% {
+    transform: scale(150) rotate(360deg);
+    background: $color-main;
+  }
+}
+
+@keyframes preload-close {
+  99% {
+    transform: scale(1) rotate(0deg);
+    background: $color-background;
+  }
+  100% {
+    background: none;
+  }
+}
