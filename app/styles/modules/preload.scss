@@ -9,25 +9,21 @@
   margin: auto;
   background: none;
   
-  &-open { animation: preload-open 2s forwards; }
-  &-close { animation: preload-close 2s forwards; }
+  &-start { animation: preload 1.5s forwards; }
   
 }
 
-@keyframes preload-open {
+@keyframes preload {
   0% {
     background: $color-background;
   }
   10% {
     background: $color-main;
   }
-  100% {
-    transform: scale(150) rotate(360deg);
+  50% {
+    transform: scale(100) rotate(180deg);
     background: $color-main;
   }
-}
-
-@keyframes preload-close {
   99% {
     transform: scale(1) rotate(0deg);
     background: $color-background;

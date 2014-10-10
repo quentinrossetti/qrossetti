@@ -118,7 +118,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
     // watch for changes
 
     gulp.watch([
-        'app/*.html',
+        'app/**/*.html',
         '.tmp/styles/**/*.css',
         'app/scripts/**/*.js',
         'app/images/**/*'
@@ -130,4 +130,10 @@ gulp.task('watch', ['connect', 'serve'], function () {
     gulp.watch('app/scripts/**/*.js', ['scripts']);
     gulp.watch('app/images/**/*', ['images']);
     gulp.watch('bower.json', ['wiredep']);
+});
+
+gulp.task('deploy', ['build'], function () {
+    return gulp.src('dist')
+        .pipe($.subtree())
+        .pipe($.clean());
 });

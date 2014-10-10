@@ -3,5 +3,5 @@ $color-background: #ffffff;
 $color-main: #5890a3;
 
 // Importations
-@import 'base/reset';
 @import 'modules/preload';
+@import 'state/animation';
