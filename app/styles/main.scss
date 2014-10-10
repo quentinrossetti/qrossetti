@@ -1,7 +1,16 @@
 // Variables
+
 $color-background: #ffffff;
 $color-main: #5890a3;
 
 // Importations
+
+@import 'base/text';
+
+@import 'layout/wrapper';
+@import 'layout/nav';
+
 @import 'modules/preload';
+
 @import 'state/animation';
+@import 'state/screen';
