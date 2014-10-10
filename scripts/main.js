@@ -1,0 +1,1 @@
+"use strict";var page=function(t){$.get("pages/"+t+".html").fail(function(){return this}).done(function(t){return $("#preload").addClass("preload-start"),setTimeout($("#wrapper").html(t),500),this})};routie({"/":function(){page("home")}}),$(document).ready(function(){});
