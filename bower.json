@@ -5,8 +5,7 @@
     "modernizr": "~2.6.2",
     "jquery": "~1.11.0",
     "normalize.css": "~3.0.2",
-    "routie": "~0.3.2",
-    "gridism": "~0.2.1"
+    "routie": "~0.3.2"
   },
   "devDependencies": {}
 }

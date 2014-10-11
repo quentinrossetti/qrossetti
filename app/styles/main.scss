@@ -3,14 +3,25 @@
 $color-background: #ffffff;
 $color-main: #5890a3;
 
+$bp-xs: "screen and (min-width: 320px)";
+$bp-sm: "screen and (min-width: 480px)";
+$bp-md: "screen and (min-width: 768px)";
+$bp-lg: "screen and (min-width: 1024px)";
+$bp-xl: "screen and (min-width: 1280px)";
+
 // Importations
 
 @import 'base/text';
 
 @import 'layout/wrapper';
-@import 'layout/nav';
+@import 'layout/header';
 
 @import 'modules/preload';
+@import 'modules/hero';
 
 @import 'state/animation';
-@import 'state/screen';
+@import 'state/xs';
+@import 'state/sm';
+@import 'state/md';
+@import 'state/lg';
+@import 'state/xl';
